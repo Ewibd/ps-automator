@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+
+<p>Voici la liste des images partagées pour le podcast {{name}}.</p>
+
+<p>{{description}}</p>
+
+{{# photos}}
+  <div class="wp-caption">
+    <a href="http:{{large_url}}">
+      <img alt="{{title}}" src="http:{{small_url}}">
+    </a>
+    <p class="wp-cpation-text">{{title}}</p>
+  </div>
+{{/ photos}}
